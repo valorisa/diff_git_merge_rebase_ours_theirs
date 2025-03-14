@@ -1,6 +1,6 @@
 # Comprendre Git : Merge vs. Rebase et Ours vs. Theirs par l'Exemple
 
-Ce document présente un exemple concret pour illustrer les différences fondamentales entre les commandes  et  de Git, ainsi que la signification contextuelle des termes  et  lors de la résolution de conflits.
+Ce document présente un exemple concret pour illustrer les différences fondamentales entre les commandes 'merge' et 'rebase' de Git, ainsi que la signification contextuelle des termes 'ours' et 'theirs' lors de la résolution de conflits.
 
 ## Mise en place du scénario
 
