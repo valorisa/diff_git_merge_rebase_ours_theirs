@@ -1,6 +1,6 @@
 # Comprendre Git : Merge vs. Rebase et --ours vs. --theirs par l'exemple
 
-Ce document présente un exemple concret pour illustrer les différences fondamentales entre les commandes 'merge' et 'rebase' de Git, ainsi que la signification contextuelle des termes '--ours' et '--theirs' lors de la résolution de conflits.
+Ce document présente un exemple concret pour illustrer les différences fondamentales entre les commandes '```merge```' et '```rebase```' de Git, ainsi que la signification contextuelle des termes '```--ours```' et '```--theirs```' lors de la résolution de conflits.
 
 ## Mise en place du scénario
 
@@ -158,22 +158,22 @@ git rebase --continue
 ### Comportement de Merge
 
 Lors d'un merge, Git crée un nouveau commit de fusion qui combine les historiques des deux branches. L'historique ressemblera à ceci :
-
+```
 A---B---C---E (main)
-\ /
-D---F (feature)
-
+     \     /
+      D---F (feature)
+```
 
 Les deux branches restent intactes et leur historique est préservé. Le commit E est un commit de fusion qui incorpore les changements des deux branches.
 
 ### Comportement de Rebase
 
 Avec un rebase, l'historique de votre branche est réécrit. Le rebase prend les commits de votre branche et les "rejoue" sur la pointe de la branche cible :
-
+```
 A---B---C (main)
-
-D'---F' (feature)
-
+         \
+          D'---F' (feature)
+```
 
 Les commits D et F ont été "rejoués" (recréés) sur la pointe de main, donnant les nouveaux commits D' et F'. L'historique devient linéaire, comme si vous aviez créé la branche feature à partir du dernier commit de main.
 
