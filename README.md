@@ -88,7 +88,7 @@ ligne 2
 ligne 3
 ```
 
-C'est ici que les concepts de  et  entrent en jeu :
+C'est ici que les concepts de '```--ours```' et '```--theirs```'  entrent en jeu :
 - **ours** (le nôtre) : fait référence à la version de la branche actuelle (main)
 - **theirs** (le leur) : fait référence à la version de la branche que nous intégrons (feature)
 
